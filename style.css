@@ -1,0 +1,29 @@
+body {
+  background: #e7ebf3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  min-height: 50vh;
+  background: #365fa0;
+  border-radius: 5px;
+  padding: 2rem 2rem;
+  color: rgb(235, 235, 235);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+select {
+  padding: 0.5rem 0.5rem;
+  border-radius: 3px;
+
+}
+
+#input {
+  min-width: 70%;
+  padding: 0.5rem 0.5rem;
+  box-sizing: border-box;
+  border-radius: 3px;
+}

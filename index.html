@@ -8,23 +8,26 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Convert US units to metric</h1>
+  <div class="container container-us">
+    <h1 class="header">Convert US units to metric</h1>
     <h3>Select units to convert:</h3>
-    <select name="unitSelect" id="unitSelect">
+    <select name="unitSelect" class="unitSelect" size="0">
       <option value="mile">Miles</option>
       <option value="foot">Feet</option>
       <option value="pound">Pounds</option>
       <option value="gallon">Gallons</option>
       <option value="inch">Inches</option>
+      <option class="off" value="km">Kilometers</option>
+      <option class="off" value="m">Meters</option>
+      <option class="off" value="kg">Kilograms</option>
+      <option class="off" value="liter">Liters</option>
+      <option class="off" value="cm">Centimeters</option>
     </select>
-    <input type="text" id="input" placeholder="Enter the number...">
+    <input type="text" class="input" placeholder="Enter the number...">
     <h3>This is equal to:</h3>
-    <div id="result"></div>
+    <div class="result"></div>
+    <button class="toggleBtn">Metric to US</button>
   </div>
-
-
-
   <script src="app.js"></script>
 </body>
 </html>

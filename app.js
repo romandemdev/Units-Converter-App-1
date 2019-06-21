@@ -14,15 +14,19 @@ function toggleUnits() {
   options.forEach(option => {
     if(option.classList.contains('off')) {
       option.classList.remove('off');
+      option.classList.add('on');
     } else {
+      option.classList.remove('on');
       option.classList.add('off');
     }
   });
 
+  let active = document.querySelectorAll('.on');
+  active[0].selected = true;
   header.innerHTML === 'Convert US units to metric' ? header.innerHTML = 'Convert metric to US units' : header.innerHTML = 'Convert US units to metric';
   toggleBtn.innerHTML === 'Metric to US' ? toggleBtn.innerHTML = 'US to metric' : toggleBtn.innerHTML = "Metric to US";
-
   input.value = '';
+  result.innerHTML = "";
 }
 
 function convertUnits () {

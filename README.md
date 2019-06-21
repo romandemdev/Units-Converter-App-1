@@ -1,2 +1,4 @@
 # Units Converter App
-A simple App converting US units to metric system.
+
+## A simple App converting US units to metric system and vice versa
+

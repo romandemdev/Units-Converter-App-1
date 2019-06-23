@@ -1,0 +1,15 @@
+{
+  "name": "units_converter",
+  "version": "1.0.0",
+  "description": "Convert US ti metric units",
+  "main": "app.js",
+  "homepage": "https://romandemdev.github.io/units_converter",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "Roman D",
+  "license": "MIT",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}

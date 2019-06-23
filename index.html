@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Units Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container container-us">
+    <h1 class="header">Convert US units to metric</h1>
+    <h3>Select units to convert:</h3>
+    <select name="unitSelect" class="unitSelect" size="0">
+      <option class="on" value="mile">Miles</option>
+      <option class="on" value="foot">Feet</option>
+      <option class="on" value="pound">Pounds</option>
+      <option class="on" value="gallon">Gallons</option>
+      <option class="on" value="inch">Inches</option>
+      <option class="off" value="km">Kilometers</option>
+      <option class="off" value="m">Meters</option>
+      <option class="off" value="kg">Kilograms</option>
+      <option class="off" value="liter">Liters</option>
+      <option class="off" value="cm">Centimeters</option>
+    </select>
+    <input type="text" class="input" placeholder="Enter the number...">
+    <h3>This is equal to:</h3>
+    <div class="result"></div>
+    <button class="toggleBtn">Metric to US</button>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,3 +1,4 @@
+//Accessing DOM elements
 const input = document.querySelector('.input');
 const result = document.querySelector('.result');
 const select = document.querySelector('.unitSelect');
@@ -5,14 +6,16 @@ const toggleBtn = document.querySelector('.toggleBtn');
 const options = document.querySelectorAll('option');
 const header = document.querySelector('.header');
 
+// Event Listeners
 toggleBtn.addEventListener('click', toggleUnits);
 
 select.addEventListener('change', clear);
 
 input.addEventListener('input', convertUnits);
 
-
+// Switch Units Systems
 function toggleUnits() {
+  // toggle select options
   options.forEach(option => {
     if (option.classList.contains('off')) {
       option.classList.remove('off');
@@ -23,6 +26,7 @@ function toggleUnits() {
     }
   });
 
+  // change the view
   let active = document.querySelectorAll('.on');
   active[0].selected = true;
   header.innerHTML === 'Convert US units to metric' ? header.innerHTML = 'Convert metric to US units' : header.innerHTML = 'Convert US units to metric';
@@ -31,10 +35,12 @@ function toggleUnits() {
 }
 
 function clear() {
+  // clear input and output
   input.value = '';
   result.innerHTML = '';
 }
 
+// Convertion Functionality
 function convertUnits() {
   let units = select.value;
   let num = input.value;
